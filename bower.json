@@ -1,0 +1,20 @@
+{
+  "name": "my project",
+  "dependencies": {
+    "jquery": "2.1.3",
+    "json2": "latest",
+    "underscore": "latest",
+    "d3": "3.5.17",
+    "backbone": "latest",
+    "marionette": "~2.4.2",
+    "d3bb": "https://jgperryajc@bitbucket.org/jgperryajc/d3bb.git",
+    "ajc-design": "https://github.com/NewsappAJC/digital-design-guide.git",
+    "normalize-css": "~3.0.2",
+    "fontawesome": "latest",
+    "foundation": "latest"
+  },
+  "devDependencies": {
+    "jasmine": "latest",
+    "sinon": "latest"
+  }
+}

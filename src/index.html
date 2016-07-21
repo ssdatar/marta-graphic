@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Your Page Title Here :)</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Social Open Graph Metas: fill these out to make your fb sharing post
+  ================================================== -->
+  <meta property="og:url" content="" />
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="" />
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-touch-fullscreen" content="yes">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="style/lib/foundation.css">
+  <link rel="stylesheet" href="style/lib/normalize.css">
+  <link rel="stylesheet" href="style/fonts.css">
+  <link rel="stylesheet" href="style/lib/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="style/app.css">
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div class="container">
+
+		<header class="row">
+			<div class="small-12 medium-8 columns">
+				<h1>This is a Marta headline</h1>
+				<p class="intro">This is where some intro information goes. This is where some intro information goes. This is where some intro information goes. This is where some intro information goes. </p>
+			</div>
+			<div class="medium-4 hide-for-small-only columns">
+				This is where the map goes.
+			</div>
+		</header>
+
+		<section class="buttons row">
+			<div class="small-12 columns">
+				<button data-dropdown="drop" aria-controls="drop", aria-expanded="false" class="disabled button dropdown small">Select a category</button><br>
+				<ul id="drop" data-dropdown-content class="f-dropdown" role="menu" aria-hidden="false" tabindex="-1">
+				  <li><a href="#">Median family income</a></li>
+					<li><a href="#">Median property value</a></li>
+				  <li><a href="#">Population density</a></li>
+				  <li><a href="#">Percent white</a></li>
+					<li><a href="#">Percent with some college education</a></li>
+				  <li><a href="#">Percent below the poverty level</a></li>
+				  <li><a href="#">Percent who drive to work</a></li>
+					<li><a href="#">Percent who take public transportation to work</a></li>
+				</ul>
+				<h4 id="chart-title">Median Family Income</h4>
+			</div>
+		</section>
+
+		<section class="charts row">
+			<ul class="tabs columns" data-tab>
+			  <li class="tab-title active"><a href="#panel1">Red Line</a></li>
+			  <li class="tab-title"><a href="#panel2">Gold Line</a></li>
+			  <li class="tab-title"><a href="#panel3">Blue Line</a></li>
+			  <li class="tab-title"><a href="#panel4">Green Line</a></li>
+			</ul>
+			<div class="tabs-content">
+			  <div class="content active" id="panel1">
+					<div class="row">
+						<div class="small-12 large-10 columns">
+							<div id="red-chart">
+							</div>
+						</div>
+						<div class="small-12 large-2 columns">
+							<h5 class="red">Red Line</h5>
+							<div id="red-blurb" class="blurb">
+							</div>
+							<div id="red-blurb-default" class="blurb">
+								<div class="show-for-large-up">
+									<h6>Atlanta</h6>
+									<b>1970:</b> 68,139<br/>
+									<b>1980:</b> 65,392<br/>
+									<b>1990:</b> 77,788<br/>
+									<b>2000:</b> 86,120<br/>
+									<b>2010-14:</b> 68,336
+								</div>
+								<div class="hide-for-large-up">
+									<h6>Atlanta</h6>
+									<b>1970:</b> 68,139 <b>1980:</b> 65,392 <b>1990:</b> 77,788 <b>2000:</b> 86,120 <b>2010-14:</b> 68,336
+								</div>
+							</div>
+						</div>
+					</div>
+			  </div>
+			  <div class="content" id="panel2">
+					<div class="row">
+						<div class="small-12 large-10 columns">
+							<div id="gold-chart">
+							</div>
+						</div>
+						<div class="small-12 large-2 columns">
+							<h5 class="gold">Gold Line</h5>
+							<div id="gold-blurb" class="blurb">
+							</div>
+							<div id="gold-blurb-default" class="blurb">
+								<div class="show-for-large-up">
+									<h6>Atlanta</h6>
+									<b>1970:</b> 68,139<br/>
+									<b>1980:</b> 65,392<br/>
+									<b>1990:</b> 77,788<br/>
+									<b>2000:</b> 86,120<br/>
+									<b>2010-14:</b> 68,336
+								</div>
+								<div class="hide-for-large-up">
+									<h6>Atlanta</h6>
+									<b>1970:</b> 68,139 <b>1980:</b> 65,392 <b>1990:</b> 77,788 <b>2000:</b> 86,120 <b>2010-14:</b> 68,336
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  <div class="content" id="panel3">
+					<div class="row">
+						<div class="small-12 large-10 columns">
+							<div id="blue-chart">
+							</div>
+						</div>
+						<div class="small-12 large-2 columns">
+							<h5 class="blue">Blue Line</h5>
+							<div id="blue-blurb" class="blurb">
+							</div>
+							<div id="blue-blurb-default" class="blurb">
+								<div class="show-for-large-up">
+									<h6>Atlanta</h6>
+									<b>1970:</b> 68,139<br/>
+									<b>1980:</b> 65,392<br/>
+									<b>1990:</b> 77,788<br/>
+									<b>2000:</b> 86,120<br/>
+									<b>2010-14:</b> 68,336
+								</div>
+								<div class="hide-for-large-up">
+									<h6>Atlanta</h6>
+									<b>1970:</b> 68,139 <b>1980:</b> 65,392 <b>1990:</b> 77,788 <b>2000:</b> 86,120 <b>2010-14:</b> 68,336
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  <div class="content" id="panel4">
+					<div class="row">
+						<div class="small-12 large-10 columns">
+							<div id="green-chart">
+							</div>
+						</div>
+						<div class="small-12 large-2 columns">
+							<h5 class="green">Green Line</h5>
+							<div id="green-blurb" class="blurb">
+							</div>
+							<div id="green-blurb-default" class="blurb">
+								<div class="show-for-large-up">
+									<h6>Atlanta</h6>
+									<b>1970:</b> 68,139<br/>
+									<b>1980:</b> 65,392<br/>
+									<b>1990:</b> 77,788<br/>
+									<b>2000:</b> 86,120<br/>
+									<b>2010-14:</b> 68,336
+								</div>
+								<div class="hide-for-large-up">
+									<h6>Atlanta</h6>
+									<b>1970:</b> 68,139 <b>1980:</b> 65,392 <b>1990:</b> 77,788 <b>2000:</b> 86,120 <b>2010-14:</b> 68,336
+								</div>
+							</div>
+						</div>
+					</div>
+			  </div>
+			</div>
+		</section>
+	</div>
+
+  <script src="scripts/lib/jquery.js"></script>
+  <script src="scripts/lib/underscore.js"></script>
+  <script src="scripts/lib/backbone.js"></script>
+  <script src="scripts/lib/d3.js"></script>
+  <script src="scripts/lib/foundation.js"></script>
+	<script src="scripts/lib/foundation.dropdown.js"></script>
+
+  <!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+  <!-- /build -->
+
+	<script>
+	  $(document).foundation({
+	    tab: {
+	      callback : function (tab) {
+	        console.log(tab);
+	      }
+	    }
+	  });
+	</script>
+
+</body>
+</html>

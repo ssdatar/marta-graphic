@@ -1,0 +1,233 @@
+@import 'foundation';
+@import 'fonts';
+
+// colors
+$red1: #b2473e;
+$red2: #c26d65;
+$red3: #d1918c;
+$red4: #e1b6b2;
+$red5: #f0dad9;
+$gold: #e9b363;
+$gold-light: #e9b363;
+$blue: #a3c9bb;
+$blue-light: #a3c9bb;
+$green: #acbd78;
+$green-light: #acbd78;
+$gray: #7c6e5c;
+$black: #323232;
+
+.container {
+  padding-right: 15%;
+  padding-left: 15%;
+  h1, h2, h3, h4, h5, h6, p, .blurb {
+    color: $black;
+  }
+  @media #{$small-only} {
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+}
+
+section {
+  border: 0;
+}
+
+p {
+  &.intro {
+    font-family: 'Boomer-Light';
+    font-size: 1em;
+    line-height: 1.7;
+  }
+}
+
+.buttons {
+  .dropdown {
+    float: left;
+    margin-right: 10px;
+  }
+  h4 {
+    margin-top: -.75rem;
+    margin-bottom: 0;
+  }
+}
+
+.charts {
+  .axis path {
+    stroke-width: 1px;
+    stroke: $gray;
+    fill: none;
+    shape-rendering: optimizeSpeed;
+  }
+  .tick line {
+    stroke-width: 1px;
+    stroke: $gray;
+    fill: none;
+    opacity: 0.3;
+  }
+  h5 {
+    font-family: 'Boomer';
+    margin-bottom: 6px;
+    font-size: 1.5rem;
+    &.red {
+      border-bottom: 5px solid $red1;
+    }
+    &.gold {
+      color: $gold;
+    }
+    &.blue {
+      color: $blue;
+    }
+    &.green {
+      color: $green;
+    }
+  }
+  .station {
+    path {
+      stroke-width: 2px;
+      @media #{$small-only} {
+        stroke-width: 3px;
+      }
+    }
+  }
+  .axis {
+    font-family: 'Boomer-Light';
+    font-size: .7em;
+  }
+  .blurb {
+    font-size: .8em;
+    h6 {
+      font-family: 'Boomer';
+      margin-bottom: 0px;
+      font-size: 1.125rem;
+    }
+  }
+}
+
+#red-chart {
+  .station {
+    path {
+      &.year1970 {
+        stroke: $red5;
+      }
+      &.year1980 {
+        stroke: $red4;
+      }
+      &.year1990 {
+        stroke: $red3;
+      }
+      &.year2000 {
+        stroke: $red2;
+      }
+      &.year2010 {
+        stroke: $red1;
+      }
+    }
+    circle {
+      &.year1970 {
+        fill: $red5;
+      }
+      &.year1980 {
+        fill: $red4;
+      }
+      &.year1990 {
+        fill: $red3;
+      }
+      &.year2000 {
+        fill: $red2;
+      }
+      &.year2010 {
+        fill: $red1;
+      }
+      &:hover {
+        stroke: $red1;
+        stroke-width: 10px;
+        stroke-opacity: 0.2;
+      }
+    }
+    #Atlanta {
+      stroke: $gray;
+      &:hover {
+        stroke: $black;
+      }
+    }
+  }
+}
+
+#gold-chart {
+  .station {
+    .line {
+      stroke: $gold-light;
+      &:hover {
+        stroke: $gold;
+      }
+    }
+    #Atlanta {
+      stroke: $gray;
+      &:hover {
+        stroke: $black;
+      }
+    }
+  }
+}
+
+#blue-chart {
+  .station {
+    .line {
+      stroke: $blue-light;
+      &:hover {
+        stroke: $blue;
+      }
+    }
+    #Atlanta {
+      stroke: $gray;
+      &:hover {
+        stroke: $black;
+      }
+    }
+  }
+}
+
+#green-chart {
+  .station {
+    .line {
+      stroke: $green-light;
+      &:hover {
+        stroke: $green;
+      }
+    }
+    #Atlanta {
+      stroke: $gray;
+      &:hover {
+        stroke: $black;
+      }
+    }
+  }
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/*styles for responsive svg*/
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.svg-container-line {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 52%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
